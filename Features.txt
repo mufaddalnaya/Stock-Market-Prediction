@@ -1,0 +1,19 @@
+mom momentum constant
+stck stockistic k%
+stcd stokistic d%
+macd moving avg convergence and divergance 
+rsi relative strength index
+wr williams  R%
+ado accumulation distribution oscillation
+cci commodity chennel index
+fibonacci
+bias
+tcmo
+trix
+k-Nearest Neighbors
+
+
+reacher paper  
+
+
+k fold efficieny ditermination mathod
