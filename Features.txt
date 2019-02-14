@@ -1,12 +1,12 @@
 mom momentum constant
-stck stockistic k%
-stcd stokistic d%
+stck stochastic k%
+stcd stochastic d%
 macd moving avg convergence and divergance 
 rsi relative strength index
 wr williams  R%
 ado accumulation distribution oscillation
-cci commodity chennel index
-fibonacci
+cci commodity channel index
+fibonacci Retracements
 bias
 tcmo
 trix
