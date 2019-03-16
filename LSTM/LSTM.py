@@ -4,7 +4,8 @@ import pandas as pd
 import math
 
 dataset_train = pd.read_csv('C://Users//abc//Projects//Stock-Market-Prediction//LSTM//Train.csv')
-training_set = dataset_train.iloc[:, 9:10].values
+training_set = dataset_train.iloc[:, 37:38].values
+train = dataset_train.iloc[:, 37:38].values
 training_set = training_set[~np.isnan(training_set)]
 training_set= training_set.reshape(-1, 1)
 
@@ -55,7 +56,7 @@ regressor.add(Dense(units = 1))
 regressor.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the Training set
-regressor.fit(X_train, y_train, epochs = 100, batch_size = 32)
+regressor.fit(X_train, y_train, epochs = 40, batch_size = 32)
 
 
 
@@ -115,10 +116,10 @@ plt.show()
 
 
 dataset_test = pd.read_csv('C://Users//abc//Projects//Stock-Market-Prediction//LSTM//Test2.csv')
-real_stock_price = dataset_test.iloc[:, 9:10].values
+real_stock_price = dataset_test.iloc[:, 37:38].values
 
 
-dataset_total = pd.concat((dataset_train['MA for 22 days'], dataset_test['MA for 22 days']), axis = 0)
+dataset_total = pd.concat((dataset_train['KAMA'], dataset_test['KAMA']), axis = 0)
 inputs = dataset_total[len(dataset_total) - len(dataset_test) - 60:].values
 inputs = inputs.reshape(-1,1)
 inputs = sc.transform(inputs)
@@ -131,14 +132,8 @@ predicted_stock_price = regressor.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price)
 
 
-error = 0.0
-for i in range(0,120):
-    error += ((predicted_stock_price[i]-real_stock_price[i])/real_stock_price[i])*((predicted_stock_price[i]-real_stock_price[i])/real_stock_price[i])
-    
-error = math.sqrt(error)
-print(error)
 
-plt.plot(training_set, color = 'black', label = 'Training Data')
+#plt.plot(training_set, color = 'black', label = 'Training Data')
 plt.plot(real_stock_price, color = 'red', label = 'Real Stock Price')
 plt.plot(predicted_stock_price, color = 'blue', label = 'Predicted Stock Price')
 plt.title('Stock Price Prediction')
@@ -147,3 +142,23 @@ plt.ylabel('Stock Price')
 plt.legend()
 plt.show()
 
+predicted_stock_price_Train = regressor.predict(X_train)
+predicted_stock_price_Train = sc.inverse_transform(predicted_stock_price_Train)
+
+#plt.plot(training_set, color = 'black', label = 'Training Data')
+plt.plot(train, color = 'red', label = 'Real Stock Price')
+plt.plot(predicted_stock_price_Train, color = 'blue', label = 'Predicted Stock Price')
+plt.title('Stock Price Prediction')
+plt.xlabel('Time')
+plt.ylabel('Stock Price')
+plt.legend()
+plt.show()
+
+
+
+error = 0.0
+for i in range(0,120):
+    error += (predicted_stock_price[i]-real_stock_price[i])*(predicted_stock_price[i]-real_stock_price[i])
+error/=120    
+error = math.sqrt(error)
+print(error)

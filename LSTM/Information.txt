@@ -1,0 +1,6 @@
+MA for 22 days,
+LSTM - 100 Epochs - 1hr 10mins
+LSTM -   50 Epochs - 29 mins
+LSTM -   40 Epochs - 25 mins
+KAMA
+LSTM -   40 Epochs - 25 mins
