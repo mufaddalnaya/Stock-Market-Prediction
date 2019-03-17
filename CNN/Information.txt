@@ -1,0 +1,6 @@
+MA for 22 days,
+CNN - 100 Epochs - 2 mins
+CNN -   40 Epochs - 1 mins
+CNN -   30 Epochs - 1 mins
+KAMA
+CNN -   40 Epochs - 1 mins
