@@ -1,0 +1,21 @@
+NFLX
+MA for 14 days,
+LSTM - 100 Epochs - 1hr 10mins
+LSTM -   50 Epochs - 29 mins
+LSTM -   40 Epochs - 25 mins
+LSTM - 30 Epochs - rms = 12.211838576118359
+                                      0.04935611924089169
+		      4.9% rms error
+KAMA
+LSTM -   40 Epochs - 25 mins
+
+Netflix with Sliding Window
+MA for 14 days,
+LSTM - 30 Epochs - rms = 73.06606575117
+		%rms 0.04469574179461257
+		4.4% rms error
+Netflix without Sliding Window
+SMA for 14 days,
+LSTM - 40 Epochs - 
+		Train RMSE: 3.074108
+		Test RMSE: 34.359964

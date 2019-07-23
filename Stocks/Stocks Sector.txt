@@ -1,0 +1,39 @@
+Energy Seector
+	tata power - 1 jan 1996 to 3 apr 2019
+	adani power - 20 aug 2009 to 3 apr 2019
+
+Basic Materials
+	JSW Steel - 8 may 2003 to 3 apr 2019
+	Petronet LNG - 26 mar 2004 to 3 apr 2019
+	
+Industrial Sectors
+	TVS Motors - 2 aug 2000 to 3 apr 2019
+	Godrej Group - 1 jul 2002 to 3 apr 2019
+	
+Consumer Discretionary
+	Godrej Consumer Products Limited - 1 jul 2002 to 3 apr 2019
+	Jubilant FoodWorks Limited  - 8 feb 2010 to 3 apr 2019
+	
+Consumer Staples
+	Whirlpool - 17 mar 1980 to 3 apr 2019
+	Symphony - 17 jun 2011 to 3 apr 2019
+	
+Healthcare
+	Cipla - 1 jan 1996 to 3 apr 2019
+	Apollo Hos - 18 jul 2000 to 3 apr 2019
+	
+Financial
+	ICICI - 1 jul 2002 to 3 apr 2019
+	SBI - 1 jan 1996 to 3 apr 2019
+	
+Information Technology
+	Infosys - 1 jan 1996 to 3 apr 2019
+	Wipro - 1 jan 1996 to 3 apr 2019
+	
+Communications
+	Idea - 9 mar 2007 to 3 apr 2019
+	Airtel - 1 jul 2002 to 2 apr 2019
+	
+Utilities
+	Indowind - 14 sep 2007 to 3 apr 2019
+	Torrent Power - 3 jan 2000 to 3 apr 2019

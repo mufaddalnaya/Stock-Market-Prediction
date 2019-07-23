@@ -4,8 +4,8 @@ import pandas as pd
 import math
 
 dataset_train = pd.read_csv('C://Users//abc//Projects//Stock-Market-Prediction//Train.csv')
-training_set = dataset_train.iloc[:, 37:38].values
-train = dataset_train.iloc[:, 37:38].values
+training_set = dataset_train.iloc[:, 9:10].values
+train = dataset_train.iloc[:, 9:10].values
 training_set = training_set[~np.isnan(training_set)]
 training_set= training_set.reshape(-1, 1)
 
@@ -32,10 +32,10 @@ model = Sequential()
 model.add(Conv1D(filters=64, kernel_size=2, activation='relu', input_shape=(X_train.shape[1], 1)))
 
 model.add(MaxPooling1D(pool_size=2))
-# Adding a second LSTM layer and some Dropout regularisation
+# Adding a second CNN layer and some Dropout regularisation
 
 model.add(Flatten())
-# Adding a third LSTM layer and some Dropout regularisation
+# Adding a third CNN layer and some Dropout regularisation
 
 model.add(Dense(50, activation='relu'))
 
@@ -46,7 +46,7 @@ model.add(Dense(1))
 model.compile(optimizer = 'adam', loss = 'mean_squared_error')
 
 # Fitting the RNN to the Training set
-model.fit(X_train, y_train, epochs = 40, batch_size = 32)
+model.fit(X_train, y_train, epochs = 100, batch_size = 32)
 
 
 
@@ -104,10 +104,10 @@ plt.show()
 
 
 dataset_test = pd.read_csv('C://Users//abc//Projects//Stock-Market-Prediction//Test2.csv')
-real_stock_price = dataset_test.iloc[:, 37:38].values
+real_stock_price = dataset_test.iloc[:, 9:10].values
 
 
-dataset_total = pd.concat((dataset_train['KAMA'], dataset_test['KAMA']), axis = 0)
+dataset_total = pd.concat((dataset_train['MA for 22 days'], dataset_test['MA for 22 days']), axis = 0)
 inputs = dataset_total[len(dataset_total) - len(dataset_test) - 60:].values
 X_test = []
 for i in range(60, 180):

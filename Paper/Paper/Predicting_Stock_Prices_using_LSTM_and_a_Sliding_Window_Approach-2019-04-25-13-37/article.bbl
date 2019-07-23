@@ -1,0 +1,73 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{489105:11004371}
+B.~G. Malkiel, E.~F. Fama, {Efficient capital markets: A review of theory and
+  empirical work}, {The journal of Finance} 25~(2) (1970) 383--417.
+
+\bibitem{489105:11003463}
+O.~Coupelon, {Neural network modeling for stock movement prediction A state of
+  the art}, {Blaise Pascal University} (2007) 83.
+
+\bibitem{489105:11003464}
+M.~R. Hassan, B.~Nath, M.~Kirley, {A fusion model of HMM, ANN and GA for stock
+  market forecasting}, {Expert systems with Applications} 33~(1) (2007)
+  171--180.
+
+\bibitem{489105:11003465}
+X.~Tao, H.~Renmu, W.~Peng, X.~Dongjie, {Input dimension reduction for load
+  forecasting based on support vector machines}, in: {2004 IEEE International
+  Conference on Electric Utility Deregulation, Restructuring and Power
+  Technologies. Proceedings}, Vol.~2, 2004, pp. 510--514.
+
+\bibitem{489105:11003466}
+A.~A. Adebiyi, A.~O. Adewumi, C.~K. Ayo, {Comparison of ARIMA and artificial
+  neural networks models for stock price prediction}, {Journal of Applied
+  Mathematics} 2014.
+
+\bibitem{489105:11003467}
+C.~K. Lee, Y.~Sehwan, J.~Jongdae, {Neural network model versus SARIMA model in
+  forecasting Korean stock price index (KOSPI)}, {Issues in Information System}
+  8~(2) (2007) 372--378.
+
+\bibitem{489105:11003509}
+K.~J. Lee, A.~Y. Chi, S.~Yoo, J.~J. Jin, {Forecasting korean stock price index
+  (kospi) using back propagation neural network model, bayesian chiao's model,
+  and sarima model}, {Journal of Management Information and Decision Sciences}
+  11~(2).
+
+\bibitem{489105:11003657}
+X.~Zhang, C.~Li, Y.~Morimoto, {A Multi-factor Approach for Stock Price
+  Prediction by using Recurrent Neural Networks}, {Bulletin of Networking,
+  Computing, Systems, and Software} 8~(1) (2019) 9--13.
+
+\bibitem{489105:11003565}
+S.~Chopra, D.~Yadav, A.~N. Chopra, {Artificial Neural Networks Based Indian
+  Stock Market Price Prediction: Before and After Demonetization}, {J Swarm
+  Intel Evol Comput} 8~(174) (2019) 2.
+
+\bibitem{489105:11003566}
+W.~Long, Z.~Lu, L.~Cui, {Deep learning-based feature engineering for stock
+  price movement prediction}, {Knowledge-Based Systems} 164 (2019) 163--173.
+
+\bibitem{489105:11003608}
+N.~Arora, et~al., {Financial Analysis: Stock Market Prediction Using Deep
+  Learning Algorithms}.
+
+\bibitem{489105:11003510}
+F.~A. Gers, J.~Schmidhuber, F.~Cummins, {Learning to forget: Continual
+  prediction with LSTM}.
+
+\bibitem{489105:11003511}
+F.~A. Gers, D.~Eck, J.~Schmidhuber, {Applying LSTM to time series predictable
+  through time-window approaches} (2002).
+
+\bibitem{489105:11003512}
+H.~White, {Economic prediction using neural networks: The case of IBM daily
+  stock returns}.
+
+\end{thebibliography}

@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{NirmaThesis}
+
+
+\AtBeginDocument{\renewcommand{\bibname}{References}}
+%\DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+%Define all the packages needed in your report here
+\usepackage[pdftex]{graphicx}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[compact]{titlesec}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{placeins}
+
+
+\renewcommand{\baselinestretch}{1.5}
+\newcommand{\HRule}{\rule{\linewidth}{0.8mm}}
+\renewcommand{\chaptermark}[1]{%
+\markboth{\thechapter.\ #1}{}}
+\hypersetup{colorlinks, filecolor=black, linkcolor=black, pdftex}
+
+
+
+\begin{document}
+\renewcommand{\thepage}{\roman{page}}
+%Prepare your coverpages in coverpages.tex file and include it here.
+\include{coverpages}
+
+\begin{singlespace}
+%This command inserts Table of Contents in the report
+\tableofcontents
+
+%This command inserts List of Figures in the report
+\listoffigures 
+\addcontentsline{toc}{chapter}{List of Figures}
+
+
+%This command inserts List of Tables in the report
+\listoftables 
+\addcontentsline{toc}{chapter}{List of Tables}
+\end{singlespace}
+
+
+%Actual arabic page number starts here.
+\pagenumbering{arabic}
+
+%Include all chapter.tex files here. It is avisable to create separate .tex file for each chapter and include it here. However you can always type your contents here directly.
+\include{Demo_Chapter_1}
+\include{Demo_Chapter_2}
+\include{Demo_Chapter_3}
+\include{Demo_Chapter_4}
+\include{Demo_Chapter_5}
+
+\newpage
+
+%This command sets the bibliography style and conntect your bib database file to your latex source report file.
+\bibliographystyle{ieeetr}
+\addcontentsline{toc}{chapter}{References}
+\bibliography{mybib}
+
+\end{document}

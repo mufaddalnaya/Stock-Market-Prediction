@@ -1,0 +1,12 @@
+
+95 - 5 Test and Training
+Without Sliding window epoch = 40, batch size = 60
+SMA for 14 days
+	Train RMSE: 2.877866
+	Test RMSE: 3.549888
+
+75 - 25 Test and Training
+Without Sliding window epoch = 40, batch size = 60
+SMA for 14 days
+	Train RMSE: 1.025849
+	Test RMSE: 6.112525

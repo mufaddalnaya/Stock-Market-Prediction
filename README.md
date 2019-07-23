@@ -1,4 +1,4 @@
-# Stock-Market-Prediction
+# Stock-Price-Prediction
 Predicting Stock Prices using different Machine Learning Models
 
 Model :
